@@ -13,20 +13,30 @@
       Doufáme, že budete spokojení s našimi službami a pomůžete najít domov jednomu z našich mazlíčků. <br>      
     </p>
 
-    <p>
-        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
-          Adresa
-        </button>
-      </p>
-      <div style="min-height: 120px;">
-        <div class="collapse collapse-horizontal" id="collapseWidthExample">
-          <div class="card card-body" style="width: 300px;">
+    <p class="d-inline-flex gap-1">
+      <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Adresa</a>
+      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Kontaktní informace</button>
+    </p>
+    <div class="row">
+      <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample1">
+          <div class="card card-body">
             Ulice: Ulice Kočičích Srdcí 123<br>
             Město: Praha 1<br>
             PSČ: 110 00<br>
           </div>
         </div>
       </div>
+      <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample2">
+          <div class="card card-body">
+            Telefoní číslo: +420 13 465 798 <br>
+            Email: info@kocicistesti.cz <br>
+            Otevírací doba: Po-Pa: 8:00-18:00, So-Ne: 10:00-18:00
+          </div>
+        </div>
+      </div>
+    </div>
 
       <div class="accordion" id="accordionExample">
         <div class="accordion-item">
